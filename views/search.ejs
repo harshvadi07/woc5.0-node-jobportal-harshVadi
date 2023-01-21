@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container-fluid text-center">
+  <% companies.forEach(company => { %>
+  <div class="text-center company">
+    <% for( let key in company ) { %>
+    <% if (key === "$__" || key === "$isNew" || key === "_doc" || key === "db" || key === "discriminators" || key === "password") { %>
+    <% continue; %>
+    <% } %>
+    <b><%= key %></b>: <%= company[key] %> <br />
+    <% if (key === "description") { %>
+    <% break; %>
+    <% } %>
+    <% } %>
+    <br>
+  </div>
+  <% }) %>
+</div>
+
+<%- include("partials/footer.ejs") %>

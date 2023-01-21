@@ -1,0 +1,135 @@
+html {
+    min-height: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #E3FDFD;
+}
+
+a {
+    color: #71C9CE;
+}
+
+hr {
+    color: #71C9CE;
+}
+
+.heading {
+    color: #71C9CE;
+}
+
+.container-fluid {
+    padding: 20px 90px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: #71C9CE;
+}
+
+.navbar-header a {
+    text-decoration: none;
+    color: #E3FDFD;
+}
+
+.navbar-header a:hover {
+    color: white;
+}
+
+.nav li a {
+    color: #E3FDFD;
+    font-weight: 500;
+}
+
+.nav li a:hover {
+    color: white;
+}
+
+.categories {
+    padding: 55px;
+}
+
+.category {
+    color: #71C9CE;
+    padding: 100px;
+    margin: 35px;
+}
+
+.category-contents {
+    margin-top: 30px;
+}
+
+.job-btn {
+    color: #71C9CE;
+    border-color: #71C9CE;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.job-btn:hover {
+    background-color: #71C9CE;
+    color: #E3FDFD;
+    border-color: #E3FDFD;
+}
+
+.student-signup {
+    margin: 50px auto;
+}
+
+.student-display {
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+.options form {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.edit-btn {
+    border-color: rgb(86, 185, 224);
+    color: rgb(86, 185, 224);
+}
+
+.edit-btn:hover {
+    background-color: rgb(86, 185, 224);
+    color: white;
+}
+
+.del-btn {
+    border-color: red;
+    color: red;
+}
+
+.del-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.search-btn {
+    border-color: green;
+    color: green;
+}
+
+.search-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.company {
+    background-color: #71C9CE;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 20px auto 10px;
+    width: 500px;
+}

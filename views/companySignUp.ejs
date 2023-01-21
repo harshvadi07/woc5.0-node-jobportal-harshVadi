@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="col-md-6 text-center student-signup">
+        <form method="post" action="/company">
+
+            <p class="h4 mb-4 text-center heading">COMPANY REGISTRATION FORM</p>
+
+            <input type="text" name="companyName" class="form-control mb-2" placeholder="Company Name">
+
+
+            <input type="email" name="email" class="form-control mb-2" placeholder="E-mail">
+
+            <input type="password" name="password" class="form-control mb-2" placeholder="Password">
+
+            <input type="password" name="confirmPassword" class="form-control mb-2" placeholder="Confirm Password">
+
+            <input class="form-control mb-2" type="text" name="website" placeholder="Official Website">
+            <input class="form-control mb-2" type="text" name="reqDegree" placeholder="Required Degree">
+
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="reqCpi" placeholder="Required CPI">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="position" placeholder="Position">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" name="package" placeholder="Package (LPA)">
+                </div>
+            </div>
+
+            <input class="form-control" type="text" name="description" placeholder="Job Description">
+
+            <button class="btn btn-outline-dark btn-md job-btn mb-2" type="submit">Register</button>
+
+            <div class="text-center">
+                <p>Already registered? <a href="/signin">Sign In</a></p>
+
+                <hr>
+
+                <p>By clicking
+                    <em>Register</em> you agree to our
+                    <a href="" target="_blank">terms of service</a>.
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

@@ -1,0 +1,80 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="col-md-6 text-center student-signup">
+        <form method="post" action="/student">
+
+            <p class="h4 mb-4 text-center heading">STUDENT REGISTRATION FORM</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" name="firstName" class="form-control mb-2" placeholder="First name">
+                </div>
+
+                <div class="col-md-6">
+                    <input type="text" name="lastName" class="form-control mb-2" placeholder="Last name">
+                </div>
+            </div>
+
+            <input type="email" name="email" class="form-control mb-2" placeholder="E-mail">
+
+            <input type="password" name="password" class="form-control mb-2" placeholder="Password">
+
+            <input type="password" name="confirmPassword" class="form-control mb-2" placeholder="Confirm Password">
+
+            <input type="text" name="phoneNumber" class="form-control mb-2" placeholder="Phone number">
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" name="university" placeholder="University">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" name="degree" placeholder="Degree">
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <input class="form-control" type="number" min="2023" max="2030" name="year"
+                        placeholder="Year of Graduation">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="cpi" placeholder="CPI">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" name="age" placeholder="Age">
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-2">
+                    <label class="form-label" for="gender">Gender:</label>
+                </div>
+                <div class="col-md-3">
+                    <input name="gender" type="radio" value="male"> Male
+                </div>
+                <div class="col-md-2">
+                    <input name="gender" type="radio" value="female"> Female
+                </div>
+                <div class="col-md-2">
+                    <input name="gender" type="radio" value="other"> Other
+                </div>
+            </div>
+
+            <input class="form-control" type="text" name="skills" placeholder="Skills">
+
+            <button class="btn btn-outline-dark btn-md job-btn mb-2" type="submit">Register</button>
+
+            <div class="text-center">
+                <p>Already registered? <a href="/signin">Sign In</a></p>
+
+                <hr>
+
+                <p>By clicking
+                    <em>Register</em> you agree to our
+                    <a href="" target="_blank">terms of service</a>.
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

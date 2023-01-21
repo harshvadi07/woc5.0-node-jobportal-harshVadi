@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunt</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#">
+                    <h3>Job-Hunt</h3>
+                </a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <%= company.companyName %>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="col-md-6 text-center student-signup">
+        <form method="post" action="/editCompany">
+
+            <p class="h4 mb-4 text-center heading">EDIT DETAILS</p>
+
+            <input type="text" name="companyName" class="form-control mb-2" placeholder="Company Name"
+                value="<%= company.companyName %>">
+
+
+            <input type="email" name="email" class="form-control mb-2" placeholder="E-mail"
+                value="<%= company.email %>">
+
+            <input type="password" name="password" class="form-control mb-2" placeholder="Password"
+                value="<%= company.password %>">
+
+            <input type="password" name="confirmPassword" class="form-control mb-2" placeholder="Confirm Password">
+
+            <input class="form-control mb-2" type="text" name="website" placeholder="Official Website"
+                value="<%= company.website %>">
+            <input class="form-control mb-2" type="text" name="reqDegree" placeholder="Required Degree"
+                value="<%= company.reqDegree %>">
+
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="reqCpi" placeholder="Required CPI"
+                        value="<%= company.reqCpi %>">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="position" placeholder="Position"
+                        value="<%= company.position %>">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" name="package" placeholder="Package (LPA)"
+                        value="<%= company.package %>">
+                </div>
+            </div>
+
+            <input class="form-control" type="text" name="description" placeholder="Job Description"
+                value="<%= company.description %>">
+
+            <input type="hidden" name="id" value="<%= company._id %>">
+
+            <button class="btn btn-outline-dark btn-md job-btn mb-2" type="submit">Update Details</button>
+        </form>
+    </div>
+
+    <%- include("partials/footer") %>
