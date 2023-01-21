@@ -329,7 +329,6 @@ app.post("/search", function (req, res) {
     },
     function (err, company) {
       if (!err) {
-        // console.log(company);
         company.forEach(function (c) {
           console.log(c);
         });
