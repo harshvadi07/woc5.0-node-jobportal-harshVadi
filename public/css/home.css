@@ -128,8 +128,13 @@ hr {
 
 .company {
     background-color: #71C9CE;
-    border: 1px solid;
     border-radius: 15px;
-    margin: 20px auto 10px;
+    margin: 20px 40px;
     width: 500px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.company hr {
+    color: #E3FDFD;
 }

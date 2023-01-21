@@ -329,10 +329,7 @@ app.post("/search", function (req, res) {
     },
     function (err, company) {
       if (!err) {
-        company.forEach(function (c) {
-          console.log(c);
-        });
-        res.render("search", { companies: company });
+        res.render("search", { companies: company, student: currStudent });
       } else {
         console.log(err);
       }
