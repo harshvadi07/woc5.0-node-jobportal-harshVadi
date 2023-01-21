@@ -2,119 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Hunt</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Hunt</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#">
-                    <h3>Job-Hunt</h3>
-                </a>
-            </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Welcome, <%= student.firstName %>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="container text-center student-display">
-        <div class="row">
-            <div class="col-md-6">
-                First Name:
-            </div>
-            <div class="col-md-6">
-                <%= student.firstName %>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                Last Name:
-            </div>
-            <div class="col-md-6">
-                <%= student.lastName %>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                Email:
-            </div>
-            <div class="col-md-6">
-                <%= student.email %>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                University:
-            </div>
-            <div class="col-md-6">
-                <%= student.university %>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                Degree:
-            </div>
-            <div class="col-md-6">
-                <%= student.degree %>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                CPI:
-            </div>
-            <div class="col-md-6">
-                <%= student.cpi %>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                Skills:
-            </div>
-            <div class="col-md-6">
-                <%= student.skills %>
-            </div>
-        </div>
-        <br>
-        <div class="options">
-            <form action="/edit" method="post">
-                <input type="hidden" name="id" value="<%= student._id %>">
-                <input class="btn btn-md btn-outline-dark job-btn edit-btn" type="button" name="edit"
-                    value="Edit Student" onclick="form.submit()">
-            </form>
-            <form action="/delete" method="post">
-                <input type="hidden" name="id" value="<%= student._id %>">
-                <input class="btn btn-md btn-outline-dark job-btn del-btn" type="button" name="delete"
-                    value="Delete Student" onclick="form.submit()">
-            </form>
-            <form action="/search" method="post">
-                <input type="hidden" name="id" value="<%= student._id %>">
-                <input class="btn btn-md btn-outline-dark job-btn search-btn" type="button" name="search"
-                    value="Search Companies" onclick="form.submit()">
-            </form>
-
-        </div>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#">
+          <h3>Job-Hunt</h3>
+        </a>
+      </div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Welcome, <%= student.firstName %>
+          </a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <%- include("partials/footer") %>
+  <div class="container text-center student-display">
+    <div class="row">
+      <div class="col-md-6">
+        First Name:
+      </div>
+      <div class="col-md-6">
+        <%= student.firstName %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        Last Name:
+      </div>
+      <div class="col-md-6">
+        <%= student.lastName %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        Email:
+      </div>
+      <div class="col-md-6">
+        <%= student.email %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        University:
+      </div>
+      <div class="col-md-6">
+        <%= student.university %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        Degree:
+      </div>
+      <div class="col-md-6">
+        <%= student.degree %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        CPI:
+      </div>
+      <div class="col-md-6">
+        <%= student.cpi %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        Skills:
+      </div>
+      <div class="col-md-6">
+        <%= student.skills %>
+      </div>
+    </div>
+    <br>
+    <div class="options">
+      <form action="/edit" method="post">
+        <input type="hidden" name="id" value="<%= student._id %>">
+        <input class="btn btn-md btn-outline-dark job-btn edit-btn" type="button" name="edit" value="Edit Student" onclick="form.submit()">
+      </form>
+      <form action="/delete" method="post">
+        <input type="hidden" name="id" value="<%= student._id %>">
+        <input class="btn btn-md btn-outline-dark job-btn del-btn" type="button" name="delete" value="Delete Student" onclick="form.submit()">
+      </form>
+      <form action="/search" method="post">
+        <input type="hidden" name="id" value="<%= student._id %>">
+        <input class="btn btn-md btn-outline-dark job-btn search-btn" type="button" name="search" value="Search Companies" onclick="form.submit()">
+      </form>
+
+    </div>
+  </div>
+
+  <%- include("partials/footer") %>

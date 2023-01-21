@@ -1,24 +1,24 @@
 <%- include("partials/header.ejs") %>
 
-    <div class="col-md-6 text-center student-signup">
-        <form method="post" action="/signin">
+<div class="col-md-6 text-center student-signup">
+  <form method="post" action="/signin">
 
-            <p class="h4 mb-4 text-center heading">SIGN IN</p>
+    <p class="h4 mb-4 text-center heading">SIGN IN</p>
 
-            <input type="email" name="email" class="form-control mb-2" placeholder="E-mail">
+    <input type="email" name="email" class="form-control mb-2" placeholder="E-mail">
 
-            <input type="password" name="password" class="form-control mb-2" placeholder="Password">
+    <input type="password" name="password" class="form-control mb-2" placeholder="Password">
 
-            <div>
-                <%= errorMsg %>
-            </div>
-
-            <button class="btn btn-outline-dark btn-md job-btn mb-2" type="submit">Sign In</button>
-
-            <div class="text-center">
-                <p>Need an account? <a href="/">Sign Up</a></p>
-            </div>
-        </form>
+    <div>
+      <%= errorMsg %>
     </div>
 
-    <%- include("partials/footer.ejs") %>
+    <button class="btn btn-outline-dark btn-md job-btn mb-2" type="submit">Sign In</button>
+
+    <div class="text-center">
+      <p>Need an account? <a href="/">Sign Up</a></p>
+    </div>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

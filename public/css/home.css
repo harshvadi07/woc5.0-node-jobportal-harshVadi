@@ -17,6 +17,15 @@ hr {
     color: #71C9CE;
 }
 
+footer {
+    background-color: #71C9CE;
+    color: #E3FDFD;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .heading {
     color: #71C9CE;
 }
@@ -55,12 +64,12 @@ hr {
 }
 
 .categories {
-    padding: 55px;
+    padding: 45px;
 }
 
 .category {
     color: #71C9CE;
-    padding: 100px;
+    padding: 60px;
     margin: 35px;
 }
 
@@ -137,4 +146,8 @@ hr {
 
 .company hr {
     color: #E3FDFD;
+}
+
+.social-icon {
+    margin: 35px 10px 0px;
 }
